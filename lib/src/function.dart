@@ -1,10 +1,6 @@
 import 'package:parsejs/parsejs.dart';
+import 'package:samurai/samurai.dart';
 import 'package:symbol_table/symbol_table.dart';
-import 'arguments.dart';
-import 'context.dart';
-import 'literal.dart';
-import 'object.dart';
-import 'samurai.dart';
 
 /// The Dart function that is responsible for the logic of a given [JsFunction].
 typedef JsObject JsFunctionCallback(
@@ -38,11 +34,47 @@ class JsFunction extends JsObject {
 
   void set name(String value) => properties['name'] = new JsString(value);
 
+  @override
+  JsObject getProperty(name) {
+    if (name is JsString) {
+      return getProperty(name.valueOf);
+    } else if (name == 'apply') {
+      return wrapFunction((samurai, arguments, ctx) {
+        var a1 = arguments.getProperty(1.0);
+        var args = a1 is JsArray ? a1.valueOf : <JsObject>[];
+        return samurai.invoke(this, args,
+            arguments.valueOf.isEmpty ? ctx : ctx.bind(arguments.valueOf[0]));
+      }, this, 'call');
+    } else if (name == 'bind') {
+      return wrapFunction(
+          (_, arguments, ctx) =>
+              bind(arguments.getProperty(0.0) ?? ctx.scope.context),
+          this,
+          'bind');
+    } else if (name == 'call') {
+      return wrapFunction((samurai, arguments, ctx) {
+        return samurai.invoke(this, arguments.valueOf.skip(1).toList(),
+            arguments.valueOf.isEmpty ? ctx : ctx.bind(arguments.valueOf[0]));
+      }, this, 'call');
+    } else if (name == 'constructor') {
+      return JsFunctionConstructor.singleton;
+    } else {
+      return super.getProperty(name);
+    }
+  }
+
   JsFunction bind(JsObject newContext) {
-    return new JsFunction(newContext, f)
+    var ff = new JsFunction(newContext, f)
       ..properties.addAll(properties)
-      ..closureScope = closureScope.fork()
+      ..closureScope = closureScope?.fork()
       ..declaration = declaration;
+
+    if (isAnonymous || name == null)
+      ff.name = 'bound ';
+    else
+      ff.name = 'bound $name';
+
+    return ff;
   }
 
   @override

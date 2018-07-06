@@ -2,28 +2,39 @@ import 'package:parsejs/parsejs.dart';
 import 'package:samurai/samurai.dart';
 
 class JsFunctionConstructor extends JsConstructor {
-  JsFunctionConstructor(JsObject context) : super(context, constructor) {
-    void _wrap(JsFunctionCallback f, String name) {
-      prototype[name] = new JsFunction(context, f)..name = name;
-    }
+  static JsFunction singleton;
 
-    _wrap(apply, 'apply');
-    _wrap(bind_, 'bind');
-    _wrap(call_, 'call');
+  factory JsFunctionConstructor(JsObject context) =>
+      singleton ??= new JsFunctionConstructor._(context);
+
+  JsFunctionConstructor._(JsObject context) : super(context, constructor) {
     name = 'Function';
+    prototype.addAll({
+      'constructor': this,
+      'apply': wrapFunction(JsFunctionConstructor.apply, context, 'apply'),
+      'bind': wrapFunction(JsFunctionConstructor.bind_, context, 'bind'),
+      'call': wrapFunction(JsFunctionConstructor.call_, context, 'call'),
+    });
   }
 
   static JsObject constructor(
       Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    var paramNames = arguments.valueOf.length <= 1
-        ? <String>[]
-        : arguments.valueOf
-            .take(arguments.valueOf.length - 1)
-            .map((o) => coerceToString(o, samurai, ctx))
-            .toList();
-    var body = parsejs(arguments.valueOf.isEmpty
-        ? ''
-        : coerceToString(arguments.valueOf.last, samurai, ctx));
+    List<String> paramNames;
+    Program body;
+
+    if (arguments.valueOf.isEmpty) {
+      paramNames = <String>[];
+    } else {
+      paramNames = arguments.valueOf.length <= 1
+          ? <String>[]
+          : arguments.valueOf
+              .take(arguments.valueOf.length - 1)
+              .map((o) => coerceToString(o, samurai, ctx))
+              .toList();
+      body = parsejs(arguments.valueOf.isEmpty
+          ? ''
+          : coerceToString(arguments.valueOf.last, samurai, ctx));
+    }
 
     var f = new JsFunction(ctx.scope.context, (samurai, arguments, ctx) {
       ctx = ctx.createChild();
@@ -33,17 +44,36 @@ class JsFunctionConstructor extends JsConstructor {
             .create(paramNames[i], value: arguments.getProperty(i.toDouble()));
       }
 
-      return samurai.visitProgram(body);
+      return body == null
+          ? null
+          : samurai.visitProgram(body, 'anonymous function', ctx);
     });
+
     f.closureScope = samurai.globalScope.createChild()
       ..context = samurai
           .global; // Yes, this is the intended semantics. Operates in the global scope.
     return f;
   }
 
-  JsObject apply(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {}
+  static JsObject apply(
+      Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
+    return coerceToFunction(arguments.getProperty(0.0), (f) {
+      var a1 = arguments.getProperty(1.0);
+      var args = a1 is JsArray ? a1.valueOf : <JsObject>[];
+      return samurai.invoke(f, args, ctx);
+    });
+  }
 
-  JsObject bind_(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {}
+  static JsObject bind_(
+      Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
+    return coerceToFunction(arguments.getProperty(0.0),
+        (f) => f.bind(arguments.getProperty(1.0) ?? ctx.scope.context));
+  }
 
-  JsObject call_(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {}
+  static JsObject call_(
+      Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
+    return coerceToFunction(arguments.getProperty(0.0), (f) {
+      return samurai.invoke(f, arguments.valueOf.skip(1).toList(), ctx);
+    });
+  }
 }

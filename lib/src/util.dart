@@ -51,6 +51,14 @@ String coerceToString(JsObject object, Samurai samurai, SamuraiContext ctx) {
   }
 }
 
+JsObject coerceToFunction(JsObject obj, JsObject Function(JsFunction) f) {
+  if (obj is! JsFunction) {
+    return null;
+  } else {
+    return f(obj);
+  }
+}
+
 JsBoolean safeBooleanOperation(JsObject left, JsObject right, Samurai samurai,
     SamuraiContext ctx, bool Function(num, num) f) {
   var l = coerceToNumber(left, samurai, ctx);
@@ -61,4 +69,8 @@ JsBoolean safeBooleanOperation(JsObject left, JsObject right, Samurai samurai,
   } else {
     return new JsBoolean(f(l, r));
   }
+}
+
+JsFunction wrapFunction(JsFunctionCallback f, JsObject context, [String name]) {
+  return new JsFunction(context, f)..name = name;
 }

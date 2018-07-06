@@ -15,9 +15,9 @@ class Samurai {
     loadBuiltinObjects(this);
   }
 
-  JsObject visitProgram(Program node,
-      [String stackName = '<entry>', SamuraiContext ctx]) {
+  JsObject visitProgram(Program node, [String stackName, SamuraiContext ctx]) {
     CallStack callStack;
+    stackName = node.filename ?? '<entry>';
 
     if (ctx != null) {
       callStack = ctx.callStack;
@@ -108,15 +108,17 @@ class Samurai {
         return null;
       }
 
-      var ref = scope.resolve(node.name.value)?.value ??
-          global.properties[node.name.value];
+      var symbol = scope.resolve(node.name.value);
 
-      if (ref == null) {
-        throw callStack.error(
-            'Reference', '${node.name.value} is not defined.');
+      if (symbol != null) {
+        return symbol.value;
       }
 
-      return ref;
+      if (global.properties.containsKey(node.name.value)) {
+        return global.properties[node.name.value];
+      }
+
+      throw callStack.error('Reference', '${node.name.value} is not defined.');
     }
 
     if (node is MemberExpression) {

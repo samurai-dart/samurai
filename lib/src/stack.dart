@@ -34,7 +34,8 @@ class Frame {
   Frame(this.filename, this.line, this.name);
 
   @override
-  String toString() => '$name:$filename:$line';
+  String toString() =>
+      filename == null ? '$name:$line' : '$name:$filename:$line';
 }
 
 class SamuraiException implements Exception {

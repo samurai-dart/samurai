@@ -11,4 +11,8 @@ class SamuraiContext {
   SamuraiContext createChild() {
     return new SamuraiContext(scope.createChild(), callStack.duplicate());
   }
+
+  SamuraiContext bind(JsObject context) {
+    return createChild()..scope.context = context;
+  }
 }
