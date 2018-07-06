@@ -20,6 +20,10 @@ class CallStack {
     var frames = _frames.toList();
     return new SamuraiException(msg, frames);
   }
+
+  CallStack duplicate() {
+    return new CallStack().._frames.addAll(_frames);
+  }
 }
 
 class Frame {

@@ -9,6 +9,6 @@ class SamuraiContext {
   SamuraiContext(this.scope, this.callStack);
 
   SamuraiContext createChild() {
-    return new SamuraiContext(scope.createChild(), callStack);
+    return new SamuraiContext(scope.createChild(), callStack.duplicate());
   }
 }

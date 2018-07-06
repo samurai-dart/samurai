@@ -1,14 +1,7 @@
 import 'dart:async';
 import 'package:parsejs/parsejs.dart';
+import 'package:samurai/samurai.dart';
 import 'package:symbol_table/symbol_table.dart';
-import 'array.dart';
-import 'arguments.dart';
-import 'context.dart';
-import 'function.dart';
-import 'literal.dart';
-import 'object.dart';
-import 'stack.dart';
-import 'util.dart';
 
 class Samurai {
   final List<Completer> awaiting = <Completer>[];
@@ -16,114 +9,22 @@ class Samurai {
   final JsObject global = new JsObject();
 
   Samurai() {
-    var decodeUriFunction = new JsFunction(global, (samurai, arguments, __) {
-      try {
-        return new JsString(
-            Uri.decodeFull(arguments.getProperty(0.0)?.toString()));
-      } catch (_) {
-        return arguments.getProperty(0.0);
-      }
-    });
-
-    var decodeUriComponentFunction =
-        new JsFunction(global, (samurai, arguments, __) {
-      try {
-        return new JsString(
-            Uri.decodeComponent(arguments.getProperty(0.0)?.toString()));
-      } catch (_) {
-        return arguments.getProperty(0.0);
-      }
-    });
-    var encodeUriFunction = new JsFunction(global, (samurai, arguments, __) {
-      try {
-        return new JsString(
-            Uri.encodeFull(arguments.getProperty(0.0)?.toString()));
-      } catch (_) {
-        return arguments.getProperty(0.0);
-      }
-    });
-
-    var encodeUriComponentFunction =
-        new JsFunction(global, (samurai, arguments, __) {
-      try {
-        return new JsString(
-            Uri.encodeComponent(arguments.getProperty(0.0)?.toString()));
-      } catch (_) {
-        return arguments.getProperty(0.0);
-      }
-    });
-
-    var evalFunction = new JsFunction(global, (_, arguments, ctx) {
-      var src = arguments.getProperty(0.0)?.toString();
-      if (src == null || src.trim().isEmpty) return null;
-
-      try {
-        var program = parsejs(src, filename: 'eval');
-        return visitProgram(program, 'eval');
-      } on ParseError catch (e) {
-        throw ctx.callStack.error('Syntax', e.message);
-      }
-    });
-
-    var isFinite = new JsFunction(global, (_, arguments, ctx) {
-      return new JsBoolean(
-          coerceToNumber(arguments.getProperty(0.0), this, ctx).isFinite);
-    });
-
-    var isNaN = new JsFunction(global, (_, arguments, ctx) {
-      return new JsBoolean(
-          coerceToNumber(arguments.getProperty(0.0), this, ctx).isNaN);
-    });
-
-    var parseFloatFunction = new JsFunction(global, (_, arguments, __) {
-      var str = arguments.getProperty(0.0)?.toString();
-      var v = str == null ? null : double.tryParse(str);
-      return v == null ? null : new JsNumber(v);
-    });
-
-    var parseIntFunction = new JsFunction(global, (_, arguments, __) {
-      var str = arguments.getProperty(0.0)?.toString();
-      var baseArg = arguments.getProperty(1.0);
-      var base = baseArg == null ? 10 : int.tryParse(baseArg.toString());
-      if (base == null) return new JsNumber(double.nan);
-      var v = str == null
-          ? null
-          : int.tryParse(str.replaceAll(new RegExp(r'^0x'), ''), radix: base);
-      return v == null ? new JsNumber(double.nan) : new JsNumber(v);
-    });
-
-    var printFunction = new JsFunction(
-      global,
-      (samurai, arguments, scope) {
-        arguments.valueOf.forEach(print);
-      },
-    );
-
-    global.properties.addAll({
-      'decodeURI': decodeUriFunction..name = 'decodeURI',
-      'decodeURIComponent': decodeUriComponentFunction
-        ..name = 'decodeURIComponent',
-      'encodeURI': encodeUriFunction..name = 'encodeURI',
-      'encodeURIComponent': encodeUriComponentFunction
-        ..name = 'encodeURIComponent',
-      'eval': evalFunction..name = 'eval',
-      'Infinity': new JsNumber(double.infinity),
-      'isFinite': isFinite..name = 'isFinite',
-      'isNaN': isNaN..name = 'isNaN',
-      'NaN': new JsNumber(double.nan),
-      'parseFloat': parseFloatFunction..name = 'parseFloat',
-      'parseInt': parseIntFunction..name = 'parseInt',
-      'print': printFunction..properties['name'] = new JsString('print'),
-    });
-
     globalScope
       ..context = global
       ..create('global', value: global);
+    loadBuiltinObjects(this);
   }
 
-  JsObject visitProgram(Program node, [String stackName = '<entry>']) {
-    var callStack = new CallStack();
-    var ctx = new SamuraiContext(globalScope, callStack);
+  JsObject visitProgram(Program node,
+      [String stackName = '<entry>', SamuraiContext ctx]) {
+    CallStack callStack;
+
+    if (ctx != null) {
+      callStack = ctx.callStack;
+    } else {
+      callStack = new CallStack();
+      ctx = new SamuraiContext(globalScope, callStack);
+    }
     callStack.push(node.filename, node.line, stackName);
 
     // TODO: Hoist functions, declarations into global scope.
@@ -282,7 +183,7 @@ class Samurai {
               target.name);
         }
 
-        if (node.isNew) {
+        if (node.isNew && target is! JsConstructor) {
           result = target.newInstance();
           childScope.context = result;
           target.f(this, arguments, new SamuraiContext(childScope, callStack));

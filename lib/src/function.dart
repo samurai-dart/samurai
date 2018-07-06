@@ -6,7 +6,10 @@ import 'literal.dart';
 import 'object.dart';
 import 'samurai.dart';
 
-// TODO: Prototype
+/// The Dart function that is responsible for the logic of a given [JsFunction].
+typedef JsObject JsFunctionCallback(
+    Samurai samurai, JsArguments arguments, SamuraiContext ctx);
+
 class JsFunction extends JsObject {
   final JsObject Function(Samurai, JsArguments, SamuraiContext) f;
   final JsObject context;
@@ -46,4 +49,10 @@ class JsFunction extends JsObject {
   String toString() {
     return isAnonymous ? '[Function]' : '[Function: $name]';
   }
+}
+
+class JsConstructor extends JsFunction {
+  JsConstructor(JsObject context,
+      JsObject Function(Samurai, JsArguments, SamuraiContext) f)
+      : super(context, f);
 }
