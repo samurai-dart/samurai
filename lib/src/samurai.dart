@@ -28,15 +28,21 @@ class Samurai {
     callStack.push(node.filename, node.line, stackName);
 
     // TODO: Hoist functions, declarations into global scope.
+    JsObject out;
 
     for (var stmt in node.body) {
       callStack.push(stmt.filename, stmt.line, stackName);
-      visitStatement(stmt, ctx, stackName);
+      var result = visitStatement(stmt, ctx, stackName);
+
+      if (stmt is ExpressionStatement) {
+        out = result;
+      }
+
       callStack.pop();
     }
 
     callStack.pop();
-    return null;
+    return out;
   }
 
   JsObject visitStatement(

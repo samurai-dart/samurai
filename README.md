@@ -4,6 +4,8 @@
 
 Portable JS engine, written in Dart.
 
+![Screenshot in terminal](screenshots/terminal.png)
+
 
 ## Possibilities
 * Existing JS libraries that cannot be easily ported can be wrapped
