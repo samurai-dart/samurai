@@ -123,7 +123,7 @@ class Samurai {
 
     if (node is MemberExpression) {
       var target = visitExpression(node.object, ctx);
-      return target?.getProperty(node.property.value);
+      return target?.getProperty(node.property.value, this, ctx);
     }
 
     if (node is ThisExpression) {
@@ -131,7 +131,7 @@ class Samurai {
     }
 
     if (node is ObjectExpression) {
-      var props = {};
+      var props = <dynamic, JsObject>{};
 
       for (var prop in node.properties) {
         props[prop.nameString] = visitExpression(prop.expression, ctx);
@@ -263,7 +263,7 @@ class Samurai {
             l.property.value,
             performNumericalBinaryOperation(
               trimmedOp,
-              left.getProperty(l.property.value),
+              left.getProperty(l.property.value, this, ctx),
               visitExpression(node.right, ctx),
               ctx,
             ),
@@ -445,6 +445,7 @@ class Samurai {
     var arguments = new JsArguments(args, target);
     childScope = childScope.createChild(values: {'arguments': arguments});
     childScope.context = target.context ?? scope.context;
+    print('${target.context} => ${childScope.context}');
 
     JsObject result;
 

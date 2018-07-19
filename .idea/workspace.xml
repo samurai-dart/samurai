@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6f5b50c2-03b2-4a2b-b042-408fc91e0b4f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="samurai.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bin/samurai.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="e#0#17#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="samurai.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/samurai.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="80">
+                <caret line="3" selection-start-line="3" selection-end-line="3" />
+                <folding>
+                  <element signature="e#0#38#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/src/util.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1088">
+              <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cALLeX</find>
+      <find>closureScope</find>
+      <find>is not a fun</find>
+      <find>NameExp</find>
+      <find>defined</find>
+      <find>NameExpre</find>
+      <find>cyan</find>
+      <find>blue</find>
+      <find>isTruthy</find>
+      <find>decode</find>
+      <find>console.log</find>
+      <find>isNew</find>
+      <find>scope</find>
+      <find>, scope</find>
+      <find>SymbolTable&lt;JsObject&gt; scope</find>
+      <find>functionNode</find>
+      <find>is not defined</find>
+      <find>print</find>
+      <find>print`</find>
+      <find>childS</find>
+      <find>print(</find>
+      <find>Unar</find>
+      <find>Unary</find>
+      <find>Index</find>
+      <find>AssignmentE</find>
+      <find>delete</find>
+      <find>CallExp</find>
+      <find>lists</find>
+      <find>not defined</find>
+      <find>fork</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>SymbolTable&lt;PrototypeInstance&gt;</replace>
+      <replace>otoT</replace>
+      <replace>getValue(obj)</replace>
+      <replace>getValue(x)</replace>
+      <replace>JSArgumentList</replace>
+      <replace>valueOf</replace>
+      <replace>encode</replace>
+      <replace>console.log</replace>
+      <replace>print</replace>
+      <replace>ctx</replace>
+      <replace>, ctx</replace>
+      <replace>SamuraiContext ctx</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/lib/src/analysis</dir>
+      <dir>$PROJECT_DIR$/lib</dir>
+      <dir>$PROJECT_DIR$/testcases</dir>
+      <dir>$PROJECT_DIR$/lib/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lib/src/expressions.dart" />
+        <option value="$PROJECT_DIR$/test/variables_test.dart" />
+        <option value="$PROJECT_DIR$/test/expressions/member_test.dart" />
+        <option value="$PROJECT_DIR$/test/expressions/name_test.dart" />
+        <option value="$PROJECT_DIR$/test/expressions/literal_test.dart" />
+        <option value="$PROJECT_DIR$/test/expressions/this_test.dart" />
+        <option value="$PROJECT_DIR$/lib/src/values/values.dart" />
+        <option value="$PROJECT_DIR$/lib/src/values/number.dart" />
+        <option value="$PROJECT_DIR$/lib/src/values/function.dart" />
+        <option value="$PROJECT_DIR$/lib/src/values/boolean.dart" />
+        <option value="$PROJECT_DIR$/lib/src/value.dart" />
+        <option value="$PROJECT_DIR$/lib/src/analysis/js_property.dart" />
+        <option value="$PROJECT_DIR$/lib/src/analysis/js_bool.dart" />
+        <option value="$PROJECT_DIR$/lib/src/analysis/analysis.dart" />
+        <option value="$PROJECT_DIR$/lib/src/analysis/js_object.dart" />
+        <option value="$PROJECT_DIR$/lib/src/analysis/js_boolean.dart" />
+        <option value="$PROJECT_DIR$/test/analysis/function_test.dart" />
+        <option value="$PROJECT_DIR$/lib/src/analysis/js_value.dart" />
+        <option value="$PROJECT_DIR$/lib/src/analysis/js_function.dart" />
+        <option value="$PROJECT_DIR$/lib/src/number.dart" />
+        <option value="$PROJECT_DIR$/lib/src/string.dart" />
+        <option value="$PROJECT_DIR$/lib/src/boolean.dart" />
+        <option value="$PROJECT_DIR$/example/repl.dart" />
+        <option value="$PROJECT_DIR$/lib/src/argument_list.dart" />
+        <option value="$PROJECT_DIR$/lib/src/arguments.dart" />
+        <option value="$PROJECT_DIR$/testcases/fibonacci.js" />
+        <option value="$PROJECT_DIR$/testcases/is_finite.js" />
+        <option value="$PROJECT_DIR$/testcases/uri.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lib/src/console.dart" />
+        <option value="$PROJECT_DIR$/bin/samurai.dart" />
+        <option value="$PROJECT_DIR$/testcases/car.js" />
+        <option value="$PROJECT_DIR$/testcases/tilde.js" />
+        <option value="$PROJECT_DIR$/lib/src/literal.dart" />
+        <option value="$PROJECT_DIR$/lib/src/array.dart" />
+        <option value="$PROJECT_DIR$/lib/src/builtin.dart" />
+        <option value="$PROJECT_DIR$/lib/samurai.dart" />
+        <option value="$PROJECT_DIR$/lib/src/builtin/misc.dart" />
+        <option value="$PROJECT_DIR$/lib/src/object.dart" />
+        <option value="$PROJECT_DIR$/lib/src/builtin/function_prototype.dart" />
+        <option value="$PROJECT_DIR$/lib/src/builtin/functions.dart" />
+        <option value="$PROJECT_DIR$/lib/src/builtin/builtin.dart" />
+        <option value="$PROJECT_DIR$/lib/src/stack.dart" />
+        <option value="$PROJECT_DIR$/lib/src/builtin/function_constructor.dart" />
+        <option value="$PROJECT_DIR$/lib/src/util.dart" />
+        <option value="$PROJECT_DIR$/testcases/function_prototype.js" />
+        <option value="$PROJECT_DIR$/lib/src/function.dart" />
+        <option value="$PROJECT_DIR$/lib/src/context.dart" />
+        <option value="$PROJECT_DIR$/lib/src/samurai.dart" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="93" />
+    <option name="y" value="23" />
+    <option name="width" value="1211" />
+    <option name="height" value="738" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="samurai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samurai" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="samurai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samurai" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="samurai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samurai" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="samurai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samurai" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="samurai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samurai" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="builtin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="samurai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samurai" type="462c0819:PsiDirectoryNode" />
+              <item name="screenshots" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="samurai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="samurai" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/screenshots" />
+      <recent name="$PROJECT_DIR$/lib/src/builtin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f5b50c2-03b2-4a2b-b042-408fc91e0b4f" name="Default" comment="" />
+      <created>1508564722879</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1508564722879</updated>
+      <workItem from="1508564735583" duration="2718000" />
+      <workItem from="1510152253485" duration="178000" />
+      <workItem from="1510152435337" duration="104000" />
+      <workItem from="1522957887612" duration="6804000" />
+      <workItem from="1523243080482" duration="23000" />
+      <workItem from="1529871841749" duration="471000" />
+      <workItem from="1530758001822" duration="27054000" />
+      <workItem from="1530844107838" duration="7482000" />
+      <workItem from="1531158701207" duration="342000" />
+    </task>
+    <task id="LOCAL-00001" summary="Remove everything old">
+      <created>1522958065089</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522958065089</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Basic function, object, property, value, prototype">
+      <created>1522959227100</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522959227100</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add call to JsFunction">
+      <created>1522960555410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522960555410</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add undefined, arg list">
+      <created>1522960963869</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1522960963869</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Add toString()">
+      <created>1522961248607</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1522961248607</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Finished object.assign">
+      <created>1522962702743</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1522962702743</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add newInstance">
+      <created>1522962963036</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1522962963036</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Function toString()">
+      <created>1522963232143</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1522963232143</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fixed stack overflows">
+      <created>1522963873547</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1522963873547</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Pretty print + boolean">
+      <created>1522967234477</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1522967234477</updated>
+    </task>
+    <task id="LOCAL-00011" summary="New version">
+      <created>1530771358604</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1530771358604</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Assignments complete">
+      <created>1530773613712</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1530773613713</updated>
+    </task>
+    <task id="LOCAL-00013" summary="SequenceExpression">
+      <created>1530773930483</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1530773930483</updated>
+    </task>
+    <task id="LOCAL-00014" summary="More binary operation support">
+      <created>1530775874888</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1530775874888</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Closure support">
+      <created>1530776045363</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1530776045363</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Fixed closures">
+      <created>1530777844999</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1530777844999</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Two testcases">
+      <created>1530778279024</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1530778279024</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Better naming of functions">
+      <created>1530778942465</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1530778942465</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Standard functions available, including eval">
+      <created>1530781074108</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1530781074108</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Apply prototypes + bind">
+      <created>1530782217604</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1530782217604</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added a Logger-based console">
+      <created>1530784066865</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1530784066865</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Fix prototype binding">
+      <created>1530784450627</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1530784450627</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Ignore .dart_tool">
+      <created>1530784542167</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1530784542167</updated>
+    </task>
+    <task id="LOCAL-00024" summary="SDK constraint">
+      <created>1530784557000</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1530784557000</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Multiple call stacks allowed">
+      <created>1530798405594</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1530798405594</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Allow valueOf">
+      <created>1530799462105</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1530799462105</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Delete">
+      <created>1530805569063</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1530805569063</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Function constructor broken">
+      <created>1530845998095</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1530845998095</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Function prototype done">
+      <created>1530890058797</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1530890058797</updated>
+    </task>
+    <task id="LOCAL-00030" summary="README">
+      <created>1530891871202</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1530891871202</updated>
+    </task>
+    <task id="LOCAL-00031" summary="Screenshot">
+      <created>1530892152026</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1530892152026</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 47m 10s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 47m 27s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 48m 00s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 48m 15s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 48m 22s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 48m 27s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 48m 30s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 49m 08s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 49m 15s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests_in_function_test_dart - 2018.04.05 at 17h 50m 55s.xml">
+      <configuration name="tests in function_test.dart" configurationId="DartTestRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="45176000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="93" y="23" width="1211" height="738" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Tool Output" order="14" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50266564" side_tool="true" weight="0.3298351" />
+      <window_info anchor="right" id="Maven Projects" order="12" />
+      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Dart Analysis" order="7" sideWeight="0.49733436" weight="0.32917318" />
+      <window_info anchor="right" id="Flutter Outline" order="8" weight="0.32934132" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="12" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="5" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932332" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32917318" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32932332" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917318" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25748503" />
+      <window_info anchor="right" id="SciView" order="10" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="right" id="Flutter Inspector" order="9" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="11" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3298351" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add newInstance" />
+    <MESSAGE value="Function toString()" />
+    <MESSAGE value="Fixed stack overflows" />
+    <MESSAGE value="Pretty print + boolean" />
+    <MESSAGE value="New version" />
+    <MESSAGE value="Assignments complete" />
+    <MESSAGE value="SequenceExpression" />
+    <MESSAGE value="More binary operation support" />
+    <MESSAGE value="Closure support" />
+    <MESSAGE value="Fixed closures" />
+    <MESSAGE value="Two testcases" />
+    <MESSAGE value="Better naming of functions" />
+    <MESSAGE value="Standard functions available, including eval" />
+    <MESSAGE value="Apply prototypes + bind" />
+    <MESSAGE value="Added a Logger-based console" />
+    <MESSAGE value="Fix prototype binding" />
+    <MESSAGE value="Ignore .dart_tool" />
+    <MESSAGE value="SDK constraint" />
+    <MESSAGE value="Multiple call stacks allowed" />
+    <MESSAGE value="Allow valueOf" />
+    <MESSAGE value="Delete" />
+    <MESSAGE value="Function constructor broken" />
+    <MESSAGE value="Function prototype done" />
+    <MESSAGE value="README" />
+    <MESSAGE value="Screenshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Screenshot" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lib/src/values/number.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/src/values/values.dart" />
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/prototype-1.0.0/lib/prototype.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/value.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/src/interpreter.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/src/analysis/js_property.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/src/analysis/analysis.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/src/analysis/js_boolean.dart" />
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/collection-1.14.3/lib/src/wrappers.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="116" column="71" lean-forward="true" selection-start-line="116" selection-start-column="71" selection-end-line="116" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/analysis/js_function.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/src/analysis/js_value.dart" />
+    <entry file="file://$PROJECT_DIR$/lib/src/analysis/js_object.dart" />
+    <entry file="file://$PROJECT_DIR$/test/analysis/function_test.dart" />
+    <entry file="file://$PROJECT_DIR$/.packages">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/parsejs-1.2.0/lib/src/ast_visitor.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="127" column="26" lean-forward="true" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/parsejs-1.2.0/lib/parsejs.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/collection-1.14.10/lib/src/equality.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4816">
+          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/arguments.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/string.dart">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/fibonacci.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/Cellar/dart/2.0.0-dev.59.0/libexec/lib/core/num.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="179" column="5" lean-forward="true" selection-start-line="179" selection-start-column="5" selection-end-line="179" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/uri.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/is_finite.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/dart/2.0.0-dev.59.0/libexec/lib/core/stopwatch.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/logging-0.11.3+1/lib/logging.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/symbol_table-1.0.4/lib/src/symbol_table.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="176" column="14" selection-start-line="176" selection-start-column="14" selection-end-line="176" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/console.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="124" column="5" lean-forward="true" selection-start-line="124" selection-start-column="5" selection-end-line="124" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/car.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/number.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/tilde.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/literal.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="992">
+          <caret line="62" column="11" selection-start-line="62" selection-start-column="11" selection-end-line="62" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/samurai.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.pub-cache/hosted/pub.dartlang.org/parsejs-1.2.0/lib/src/ast.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="781" column="6" selection-start-line="781" selection-start-column="6" selection-end-line="781" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/builtin/misc.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/array.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="151" column="26" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/builtin/builtin.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/stack.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="35" column="11" lean-forward="true" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/object.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/builtin/functions.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/function_prototype.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/builtin/function_constructor.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="59" column="61" lean-forward="true" selection-start-line="59" selection-start-column="61" selection-end-line="61" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/context.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/util.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1088">
+          <caret line="73" column="36" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/function.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/samurai.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/samurai.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="80">
+            <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <folding>
+              <element signature="e#0#38#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

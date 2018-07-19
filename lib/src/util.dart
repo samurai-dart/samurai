@@ -28,7 +28,7 @@ double coerceToNumber(JsObject object, Samurai samurai, SamuraiContext ctx) {
   } else if (object is JsString) {
     return num.tryParse(object.valueOf)?.toDouble() ?? double.nan;
   } else {
-    var valueOfFunc = object?.getProperty('valueOf');
+    var valueOfFunc = object?.getProperty('valueOf', samurai, ctx);
 
     if (valueOfFunc != null) {
       if (valueOfFunc is JsFunction) {
@@ -55,7 +55,15 @@ JsObject coerceToFunction(JsObject obj, JsObject Function(JsFunction) f) {
   if (obj is! JsFunction) {
     return null;
   } else {
-    return f(obj);
+    return f(obj as JsFunction);
+  }
+}
+
+JsObject coerceToBoolean(JsObject obj, JsObject Function(JsBoolean) f) {
+  if (obj is! JsBoolean) {
+    return f(new JsBoolean(obj?.isTruthy ?? false));
+  } else {
+    return f(obj as JsBoolean);
   }
 }
 

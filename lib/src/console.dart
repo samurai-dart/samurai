@@ -36,7 +36,7 @@ class JsConsole extends JsObject {
   }
 
   JsObject assert_(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    var condition = arguments.getProperty(0.0);
+    var condition = arguments.getProperty(0.0, samurai, ctx);
 
     if (condition?.isTruthy == true) {
       _logger.info(arguments.valueOf.skip(1).join(' '));
@@ -54,7 +54,7 @@ class JsConsole extends JsObject {
   }
 
   JsObject count(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    var label = arguments.getProperty(0.0)?.toString() ?? '<no label>';
+    var label = arguments.getProperty(0.0, samurai, ctx)?.toString() ?? '<no label>';
     _counts.putIfAbsent(label, () => 1);
     var v = _counts[label]++;
     _logger.info('$label: $v');
@@ -63,7 +63,7 @@ class JsConsole extends JsObject {
   }
 
   JsObject dir(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    var obj = arguments.getProperty(0.0);
+    var obj = arguments.getProperty(0.0, samurai, ctx);
 
     if (obj != null) {
       _logger.info(obj.properties);
@@ -73,7 +73,7 @@ class JsConsole extends JsObject {
   }
 
   JsObject dirxml(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    var obj = arguments.getProperty(0.0);
+    var obj = arguments.getProperty(0.0, samurai, ctx);
 
     if (obj != null) {
       _logger.info('XML: $obj');
@@ -104,7 +104,7 @@ class JsConsole extends JsObject {
   }
 
   JsObject time(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    var label = arguments.getProperty(0.0)?.toString();
+    var label = arguments.getProperty(0.0, samurai, ctx)?.toString();
 
     if (label != null) {
       _time.putIfAbsent(label, () => new Stopwatch()..start());
@@ -113,7 +113,7 @@ class JsConsole extends JsObject {
   }
 
   JsObject timeEnd(Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    var label = arguments.getProperty(0.0)?.toString();
+    var label = arguments.getProperty(0.0, samurai, ctx)?.toString();
 
     if (label != null) {
       var sw = _time.remove(label);

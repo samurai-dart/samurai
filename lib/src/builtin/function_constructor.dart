@@ -2,7 +2,7 @@ import 'package:parsejs/parsejs.dart';
 import 'package:samurai/samurai.dart';
 
 class JsFunctionConstructor extends JsConstructor {
-  static JsFunction singleton;
+  static JsFunctionConstructor singleton;
 
   factory JsFunctionConstructor(JsObject context) =>
       singleton ??= new JsFunctionConstructor._(context);
@@ -40,8 +40,10 @@ class JsFunctionConstructor extends JsConstructor {
       ctx = ctx.createChild();
 
       for (int i = 0; i < paramNames.length; i++) {
-        ctx.scope
-            .create(paramNames[i], value: arguments.getProperty(i.toDouble()));
+        ctx.scope.create(
+          paramNames[i],
+          value: arguments.getProperty(i.toDouble(), samurai, ctx),
+        );
       }
 
       return body == null
@@ -57,8 +59,8 @@ class JsFunctionConstructor extends JsConstructor {
 
   static JsObject apply(
       Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    return coerceToFunction(arguments.getProperty(0.0), (f) {
-      var a1 = arguments.getProperty(1.0);
+    return coerceToFunction(arguments.getProperty(0.0, samurai, ctx), (f) {
+      var a1 = arguments.getProperty(1.0, samurai, ctx);
       var args = a1 is JsArray ? a1.valueOf : <JsObject>[];
       return samurai.invoke(f, args, ctx);
     });
@@ -66,13 +68,13 @@ class JsFunctionConstructor extends JsConstructor {
 
   static JsObject bind_(
       Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    return coerceToFunction(arguments.getProperty(0.0),
-        (f) => f.bind(arguments.getProperty(1.0) ?? ctx.scope.context));
+    return coerceToFunction(arguments.getProperty(0.0, samurai, ctx),
+        (f) => f.bind(arguments.getProperty(1.0, samurai, ctx) ?? ctx.scope.context));
   }
 
   static JsObject call_(
       Samurai samurai, JsArguments arguments, SamuraiContext ctx) {
-    return coerceToFunction(arguments.getProperty(0.0), (f) {
+    return coerceToFunction(arguments.getProperty(0.0, samurai, ctx), (f) {
       return samurai.invoke(f, arguments.valueOf.skip(1).toList(), ctx);
     });
   }

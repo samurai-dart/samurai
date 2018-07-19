@@ -14,6 +14,8 @@ class JsObject {
 
   dynamic get valueOf => properties;
 
+  JsObject get jsValueOf => this;
+
   bool isLooselyEqualTo(JsObject other) {
     // TODO: Finish this stupidity
     return false;
@@ -29,11 +31,18 @@ class JsObject {
     }
   }
 
-  JsObject getProperty(name) {
+  JsObject getProperty(name, Samurai samurai, SamuraiContext ctx) {
+    name = coerceIndex(name);
+
+    if (name == 'valueOf') {
+      return properties['valueOf'] ??
+          wrapFunction((_, __, _____) => jsValueOf, ctx.scope.context, 'valueOf');
+    }
+
 //    if (name == 'prototype') {
 //      return new JsPrototype(prototype);
 //    } else {
-    return properties[coerceIndex(name)];
+    return properties[name];
 //    }
   }
 

@@ -4,45 +4,45 @@ import 'package:samurai/samurai.dart';
 void loadMiscObjects(Samurai samurai) {
   var global = samurai.global;
 
-  var decodeUriFunction = new JsFunction(global, (samurai, arguments, __) {
+  var decodeUriFunction = new JsFunction(global, (samurai, arguments, ctx) {
     try {
       return new JsString(
-          Uri.decodeFull(arguments.getProperty(0.0)?.toString()));
+          Uri.decodeFull(arguments.getProperty(0.0, samurai, ctx)?.toString()));
     } catch (_) {
-      return arguments.getProperty(0.0);
+      return arguments.getProperty(0.0, samurai, ctx);
     }
   });
 
   var decodeUriComponentFunction =
-  new JsFunction(global, (samurai, arguments, __) {
+  new JsFunction(global, (samurai, arguments, ctx) {
     try {
       return new JsString(
-          Uri.decodeComponent(arguments.getProperty(0.0)?.toString()));
+          Uri.decodeComponent(arguments.getProperty(0.0, samurai, ctx)?.toString()));
     } catch (_) {
-      return arguments.getProperty(0.0);
+      return arguments.getProperty(0.0, samurai, ctx);
     }
   });
-  var encodeUriFunction = new JsFunction(global, (samurai, arguments, __) {
+  var encodeUriFunction = new JsFunction(global, (samurai, arguments,ctx) {
     try {
       return new JsString(
-          Uri.encodeFull(arguments.getProperty(0.0)?.toString()));
+          Uri.encodeFull(arguments.getProperty(0.0, samurai, ctx)?.toString()));
     } catch (_) {
-      return arguments.getProperty(0.0);
+      return arguments.getProperty(0.0, samurai, ctx);
     }
   });
 
   var encodeUriComponentFunction =
-  new JsFunction(global, (samurai, arguments, __) {
+  new JsFunction(global, (samurai, arguments, ctx) {
     try {
       return new JsString(
-          Uri.encodeComponent(arguments.getProperty(0.0)?.toString()));
+          Uri.encodeComponent(arguments.getProperty(0.0, samurai, ctx)?.toString()));
     } catch (_) {
-      return arguments.getProperty(0.0);
+      return arguments.getProperty(0.0, samurai, ctx);
     }
   });
 
-  var evalFunction = new JsFunction(global, (_, arguments, ctx) {
-    var src = arguments.getProperty(0.0)?.toString();
+  var evalFunction = new JsFunction(global, (samurai, arguments, ctx) {
+    var src = arguments.getProperty(0.0, samurai, ctx)?.toString();
     if (src == null || src.trim().isEmpty) return null;
 
     try {
@@ -53,25 +53,25 @@ void loadMiscObjects(Samurai samurai) {
     }
   });
 
-  var isFinite = new JsFunction(global, (_, arguments, ctx) {
+  var isFinite = new JsFunction(global, (samurai, arguments, ctx) {
     return new JsBoolean(
-        coerceToNumber(arguments.getProperty(0.0), samurai, ctx).isFinite);
+        coerceToNumber(arguments.getProperty(0.0, samurai, ctx), samurai, ctx).isFinite);
   });
 
-  var isNaN = new JsFunction(global, (_, arguments, ctx) {
+  var isNaN = new JsFunction(global, (samurai, arguments, ctx) {
     return new JsBoolean(
-        coerceToNumber(arguments.getProperty(0.0), samurai, ctx).isNaN);
+        coerceToNumber(arguments.getProperty(0.0, samurai, ctx), samurai, ctx).isNaN);
   });
 
-  var parseFloatFunction = new JsFunction(global, (_, arguments, __) {
-    var str = arguments.getProperty(0.0)?.toString();
+  var parseFloatFunction = new JsFunction(global, (samurai, arguments, ctx) {
+    var str = arguments.getProperty(0.0, samurai, ctx)?.toString();
     var v = str == null ? null : double.tryParse(str);
     return v == null ? null : new JsNumber(v);
   });
 
-  var parseIntFunction = new JsFunction(global, (_, arguments, __) {
-    var str = arguments.getProperty(0.0)?.toString();
-    var baseArg = arguments.getProperty(1.0);
+  var parseIntFunction = new JsFunction(global, (samurai, arguments, ctx) {
+    var str = arguments.getProperty(0.0, samurai, ctx)?.toString();
+    var baseArg = arguments.getProperty(1.0, samurai, ctx);
     var base = baseArg == null ? 10 : int.tryParse(baseArg.toString());
     if (base == null) return new JsNumber(double.nan);
     var v = str == null

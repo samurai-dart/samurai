@@ -26,13 +26,13 @@ class JsArray extends JsObject {
   }
 
   @override
-  JsObject getProperty(name) {
+  JsObject getProperty(name, Samurai samurai, SamuraiContext ctx) {
     if (name is num) {
       // TODO: RangeError?
       var v = valueOf[name.toInt()];
       return v is JsEmptyItem ? null : v;
     } else {
-      return super.getProperty(name);
+      return super.getProperty(name, samurai, ctx);
     }
   }
 

@@ -27,8 +27,9 @@ main(List<String> args) async {
       var file = new File(args[0]);
       var node = parsejs(await file.readAsString(), filename: file.path);
       samurai.visitProgram(node);
-    } on SamuraiException catch (e) {
+    } on SamuraiException catch (e, st) {
       print(red.wrap(e.toString()));
+      print(red.wrap(st.toString()));
     }
   } else {
     var repl = new Repl(prompt: '> ');
@@ -40,8 +41,9 @@ main(List<String> args) async {
         handleResult(result);
       } on ParseError catch (e) {
         print(red.wrap('SyntaxError: ${e.message}'));
-      } catch (e) {
+      } catch (e, st) {
         print(red.wrap(e.toString()));
+        print(red.wrap(st.toString()));
       }
     }
   }
